@@ -2,7 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 const { socketController } = require('../sockets/sockets_controller');
-
+// const { Server } = require("socket.io");
 require('dotenv').config();
 
 class Server {
@@ -18,6 +18,7 @@ class Server {
           this.server = require('http').createServer(this.app);
           // este es el servoer que tenemos que levantar
           this.io = require('socket.io')(this.server);
+          // this.io = new Server(ser);
 
           // eventos de websocket 
           // path  para el manejo de los web sockets 
