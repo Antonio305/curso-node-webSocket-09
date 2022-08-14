@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+     <h1> ENVIO DE DATO DE SOCKET</h1>
+
+
+
+
+    <p style="color: red; font-size: 30px">
+      server : Statu:
+      <span id="lblOnline"> Online </span>
+      <span id="lblOfline"> Ofline</span>
+    </p>
+
+    <!-- //creamos unos campos para enviar los mensaje -->
+    <div class="row">
+      <div class="col">
+        <input type="text" id="txtMensaje" class="form-control" />
+      </div>
+      <div class="col">
+        <button id="btnEnviar">Enviar datos</button>
+      </div>
+    </div>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="./js/socket-client.js"></script>
+  </body>
+</html>
